@@ -18,5 +18,20 @@ assert.equal(div, 4);
 const inf = 1 / 0;
 assert.equal(inf, Infinity);
 
+const minus_inf = 1 / -0;
+assert.equal(minus_inf, -Infinity);
+
 const nan = 0 / 0;
 assert.equal(nan, NaN);
+
+const rem = 10 % 3;
+assert.equal(rem, 1);
+
+const neg = -rem;
+assert.equal(neg, -1);
+
+const neg1 = -neg;
+assert.equal(neg1, 1);
+
+const exp = 2 ** 3;
+assert.equal(exp, 8);

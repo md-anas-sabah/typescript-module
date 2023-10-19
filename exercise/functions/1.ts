@@ -9,3 +9,21 @@
 
 import { strict as assert } from "assert";
 
+function getFirstName(): string {
+  return "John";
+}
+
+function getLastName(): string {
+  return "Doe";
+}
+
+function getFullName(): string {
+  let firstName = getFirstName();
+  let lastName = getLastName();
+  return `${firstName} ${lastName}`;
+}
+
+const fullName = getFullName();
+console.log(fullName);
+
+assert.strictEqual(fullName, "John Doe");
