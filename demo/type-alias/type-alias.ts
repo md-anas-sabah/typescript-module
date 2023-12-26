@@ -9,3 +9,12 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases
+
+// or in other words Type Alias is just providing another name for something that already exist.
+
+type PersonName = string;
+
+const name: PersonName = "Jayson";
+
+
+ 

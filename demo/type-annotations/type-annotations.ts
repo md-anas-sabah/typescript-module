@@ -10,7 +10,7 @@ import { strict as assert } from "assert";
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-annotations-on-variables
 
-const myName = "John";
+const myName: string = "John";
 const amount: number = 2 + 2;
 const hello: string = `Hello ${myName}`;
 const powerLevel: bigint = 9000n + 1n;
